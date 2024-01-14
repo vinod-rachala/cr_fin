@@ -4,32 +4,35 @@ import numpy as np
 
 fake = Faker()
 
-def create_pci_dataset(size):
+def create_synthetic_data(size):
     data = []
     for _ in range(size):
         record = {
             "credit_card_number": fake.credit_card_number(),
-            "credit_card_provider": fake.credit_card_provider(),
             "name": fake.name(),
             "address": fake.address(),
             "email": fake.email(),
             "ssn": fake.ssn(),
             "phone_number": fake.phone_number(),
-            "job": fake.job(),
             "birthdate": fake.date_of_birth(),
+            "medical_info": fake.text(),
             "tax_id": fake.itin(),
-            # ... add other fields as needed
+            # ... other fields
+            "sentence": "",
+            "contains_pci_phi_pii": 0
         }
-        # Add a sentence field that may or may not contain PCI data
+
         if np.random.rand() > 0.5:
-            record["sentence"] = f"My credit card number is {record['credit_card_number']}"
-            record["contains_pci"] = 1
+            # Include PCI, PHI, or PII in the sentence
+            choice = np.random.choice(["credit_card_number", "ssn", "medical_info"])
+            record["sentence"] = f"My {choice} is {record[choice]}"
+            record["contains_pci_phi_pii"] = 1
         else:
             record["sentence"] = fake.sentence()
-            record["contains_pci"] = 0
+
         data.append(record)
-    
+
     return pd.DataFrame(data)
 
 # Generate the dataset
-df = create_pci_dataset(1000000)
+df = create_synthetic_data(1000000)
