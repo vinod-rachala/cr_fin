@@ -1,0 +1,18 @@
+Protected Health Information (PHI)
+"John Doe's medical record number 1234567 at Mercy Hospital shows a diagnosis of Type 2 Diabetes."
+"Emily Smith's prescription, dated March 5th, 2024, is for 20mg of Lisinopril, taken once daily."
+"Patient ID 78910, with a birth date of 04/23/1975, was admitted for cardiac surgery on January 20th, 2024."
+"The MRI scan for Lisa Green, taken on February 15th, 2024, reveals signs of early-stage osteoarthritis."
+"Insurance policy #GH12345 covers Michael Johnson’s treatment for chronic kidney disease."
+Personally Identifiable Information (PII)
+"David Wilson's social security number is 123-45-6789, and his address is 456 Maple St., Springfield, IL."
+"The driver's license number for Jane Miller is D1234567, issued in California."
+"Alex Brown's email address, alexbrown@email.com, and phone number, (555) 123-4567, were updated on the account."
+"Maria Garcia, born on July 16, 1988, applied for a passport with the number 987654321."
+"Kevin Lee’s bank account number is 1234567890, and the routing number for First National Bank is 098765432."
+Payment Card Information (PCI)
+"The Visa card number 4111 1111 1111 1111, expiration 12/26, and CVV 123 belongs to Sarah Johnson."
+"Transaction ID 56789 for Mastercard 5500 0000 0000 0004, expiring 03/25, was recorded on January 10th, 2024."
+"AmEx card 3782 822463 10005, with an expiration date of 06/24 and CVV 4567, was issued to Robert Smith."
+"A purchase was made using Discover card number 6011 0009 9013 9424, expiration 11/25, CVV 890, by Emily White."
+"Credit card number 4539 1234 5678 9012, expiration 08/24, CVV 321, was used for an online purchase by David Lee."
