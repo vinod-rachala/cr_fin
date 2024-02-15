@@ -1,0 +1,70 @@
+Failed login for user 'admin_user' with password 'secretPassword!' from IP '192.168.1.100'.
+Unable to connect to 'finance_db' as user 'dbAdmin' with password 'dbPass123!' on host 'database.example.com'.
+KeyError:'The provided API key (apikey123456789) is missing or invalid for accessing https://api.payments.com/v1/charges.'
+IOError: Failed to open file '/etc/passwd' with read access. Permission denied for user 'webapp'.
+PaymentProcessingError: Credit card processing failed for card number 'XXXX XXXX XXXX XXXX', expiry '12/23'. Insufficient funds.
+SMTPAuthenticationError: Could not send email to 'john.doe@example.com'. Login with user 'emailbot' failed using password 'emailBotPass!'.
+ConfigError: Error reading configuration from '/app/config/settings.ini'. Database password 'dbSecurePass!' is not set correctly.
+PrivacyViolationError: Unauthorized attempt to access personal data for user_id '12345' detected. User SSN '789-12-3456' access blocked.
+ForbiddenAccessError: Access to 'https://api.privateinfo.com/data' denied for user with token 'tok_secret_abcd1234'.
+SaveError: Could not save credit card '4242 4242 4242 4242' for user 'jane.doe@example.com'. Card already exists.
+UserCreationError: Failed to create user 'newUser' with email 'newuser@example.com' and password 'Start123!'. Email already in use.
+DataLeakError: Sensitive data exposure detected. User 'user123' data [Credit Score: '750', Income: '$100,000'] logged to 'app.log'.
+UnauthorizedAccessError: Attempt to access health records for patient_id '98765' without proper authorization. Access by user 'clinic_staff'.
+QueryError: Failed to execute query 'SELECT * FROM users WHERE username='admin' AND password='adminPass!''. Check your syntax.
+SecurityMisconfigurationError: SSL encryption is disabled for 'https://secure.example.com'. Confidential information is at risk.
+DeletionError: Attempt to delete file '/home/user/secret_docs/financial_report.xlsx' failed. File is protected.
+BackupFailureError: Failed to backup database 'user_accounts'. Encryption key 'backupKey123!' is invalid or corrupted.
+SSHConnectionError: Could not establish SSH connection to '192.168.0.5' with user 'remoteadmin' and key 'ssh_private_key.pem'. Key is invalid.
+ResetPasswordError: Password reset for 'alice@example.com' failed. Security question answer 'first pet name: Fluffy' does not match.
+EncryptionError: Failed to encrypt user data for 'bob@example.com' using key 'encKey987!'. Key does not meet security standards.
+SQLException: Failed to connect to database 'users_db' using username 'dbAdmin' and password 'adminPass123'.
+FileNotFoundException: '/confidential/reports/annual_report_2024.pdf' cannot be opened because it does not exist or permissions are incorrect.
+AuthenticationFailedException: Authentication failed for user 'adminUser' with provided password 'password123'.
+InvalidKeyException: Provided API key 'abcd1234efgh5678' is invalid for accessing 'https://api.financialdata.com'.
+UnrecoverableKeyException: Error initializing Cipher with key obtained from keystore 'myKeyStore.jks' using password 'keystorePass!'.
+AccessDeniedException: User 'serviceAccount' does not have permission to access file '/secure/data/users_list.csv'.
+NoSuchAlgorithmException: No such algorithm 'AES' for encryption. Check your security provider configuration.
+CertificateException: Could not load certificate 'company_ssl_cert.pem'. Check if the password 'certPass123' is correct.
+NoRouteToHostException: Cannot establish SSH connection to '192.168.1.5' with username 'remoteAdmin' and private key 'id_rsa'.
+MalformedURLException: URL 'http://sensitiveinfo.example.com/data' is malformed or contains illegal characters.
+SSLHandshakeException: SSL handshake failed for 'https://secure.paymentgateway.com' with error 'invalid certificate' provided.
+HttpRetryException: HTTP request to 'https://api.customerdatabase.com' failed. Retry limit reached. API token 'secretToken123' might be expired.
+ConnectException: Failed to connect to SMTP server 'mail.example.com' using port '587' and user 'emailBot' with password 'botPass!'.
+InvalidKeySpecException: Invalid key specification for 'PGP' encryption. Check if the key 'pgpPrivateKey.asc' and passphrase 'pgpPass!' are correct.
+UnknownHostException: Unable to resolve host 'db.backupserver.com'. Ensure your DNS settings are correct and the password 'backupPass123' is updated.
+ProtocolException: Unexpected response code '403 Forbidden' for POST request to 'https://api.internaltool.com'. Session ID 'session12345' might be invalid.
+InsufficientResourcesException: Insufficient resources to execute action for user 'systemAdmin'. Check if the quota for 'adminActions' is exceeded.
+ExpiredJwtException: JWT token 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...' for user 'apiUser' expired. Token was issued with secret 'jwtSecretKey'.
+IllegalBlockSizeException: Illegal block size encountered while decrypting data for 'confidentialMessage.txt'. Encryption key 'dataEncKey!' may be incorrect.
+InvalidAlgorithmParameterException: Invalid parameters for algorithm 'RSA'. Check if the public key 'rsaPublicKey.pub' is correct and matches the private key.
+UserAccountLockedException: User account 'john.doe' is locked due to multiple failed login attempts. Last attempted password 'tryThis123'.
+DataTruncation: Data truncation error while inserting 'creditCardNumber: 1234 5678 9012 3456' into 'payments' table. Field does not accept full length.
+BatchUpdateException: Batch update failed. Transaction 'txn3456' rolled back. Error inserting 'SSN: 123-45-6789' into 'employeeRecords'.
+InvalidGrantException: Invalid grant type for OAuth token request. Client 'webAppClient' used secret 'appSecretKey' for grant type 'password'.
+ResourceNotFoundException: Requested resource '/private/customer_docs/id_proof_789.pdf' not found. Check if the path is correct and accessible by user 'docManager'.
+TransactionRequiredException: Transaction required to perform operation. Current session 'sessionID: abcdef123456' does not have an active transaction.
+InvalidTransactionException: Invalid transaction state for 'txnID: 7890'. Attempted to commit with status 'rollbackOnly'.
+ConstraintViolationException: Constraint violation inserting 'email: sensitiveEmail@example.com' into 'newsletter_subscribers'. Email already exists.
+EntityExistsException: Entity 'User{name='Jane Doe', email='jane.doe@securemail.com'}' already exists in 'users' table. Cannot insert duplicate.
+MessagingException: Failed to send email through 'smtp.securehost.com' using account 'notificationBot'. SMTP auth failed for password 'notifyPass!'.
+PathNotFoundException: Path '/configs/api_keys.txt' not found when trying to read API keys for services. Ensure file exists and is readable.
+InvalidCreditCardException: Invalid credit card '5555 4444 3333 2222' attempted for user 'customer123'. Card is expired or number is incorrect.
+OverQuotaException: API call quota exceeded for user 'dataFetcher'. Used API key 'fetcherKey789' has reached its daily limit.
+RateLimitExceeded: Rate limit exceeded for 'geoLocationAPI'. Client IP '203.0.113.45' made too many requests with key 'geoKey123'.
+StorageException: Error accessing storage. Bucket 'user-data-backups' cannot be accessed with current credentials 'storageAccessKey'.
+PermissionDeniedException: Permission denied accessing resource '/confidential/payroll_data.csv'. User 'payrollProcessor' lacks 'read' permission.
+InvalidPasswordException: Invalid password attempt for user 'financeManager'. Last tried password 'financeSecure!'.
+ApiKeyRevokedException: API key 'key12345service' has been revoked. Attempted access to 'https://service.example.com' denied.
+OutOfMemoryError: Java heap space exhausted while processing request for user 'bigDataUser'. Attempted to allocate '2GB' for 'userAnalytics'.
+StackOverflowError: Stack overflow detected while processing recursive method for user 'devTester'. Method 'calculateUserMetrics' exceeded stack limits.
+UnsupportedEncodingException: Unsupported encoding 'ASCII' detected while encrypting data for 'confidentialNotes.txt'.
+InvalidObjectException: Invalid object received for serialization. Object 'UserSensitiveDetails' contains unserializable field 'userSSN'.
+ClassNotFoundException: Class 'com.example.secure.Authenticator' not found. Check if the classpath includes 'secure-auth-module.jar'.
+IOException: Error writing to log file '/logs/error.log'. Disk quota exceeded for user 'logWriter'. Attempted to log 'failedLoginAttempt' with details 'user: sysAdmin, password: adminTry!'.
+ParseException: Error parsing date '2024-02-30' for user 'eventPlanner'. Invalid date format provided for 'eventStartDate'.
+NumberFormatException: Number format exception parsing 'salaryAmount: $120,000.00' for employee 'empID: 112233'. Expected numeric format.
+IllegalStateException: Illegal state accessing 'https://internal.configs.com/settings'. Expected status '200 OK', but got '404 Not Found'.
+TimeoutException: Timeout waiting for response from 'https://payment.processor.com'. Transaction 'order12345' may not have been processed.
+UnknownError: Unknown error occurred while decrypting file 'userPreferences.enc'. Key used: 'prefsDecryptKey'.
+SecurityException: Security violation detected. Unauthorized access attempt to 'adminPanel' by user 'guestUser' using method 'bypassSecurityCheck'.
