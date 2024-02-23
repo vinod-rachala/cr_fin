@@ -1,0 +1,210 @@
+The sun dipped below the horizon, painting the sky in shades of orange and purple.
+Amid the bustling city streets, a small flower shop offers a haven of tranquility.
+The old oak tree, standing tall for centuries, has witnessed the history of the town unfold.
+A gentle snowfall blankets the city, transforming it into a silent, wintry wonderland.
+The laughter of children playing in the park is a reminder of the simple joys of life.
+A cup of warm tea on a rainy afternoon brings comfort and serenity to the soul.
+The bond between the elderly couple, walking hand in hand, speaks volumes of enduring love.
+An aspiring writer finds inspiration in the quiet solitude of the early morning hours.
+The melody of a street musician's violin fills the air, adding a touch of magic to the evening.
+A lone hiker reaches the mountain summit just in time to witness the breathtaking sunrise.
+The vibrant colors of the autumn leaves create a stunning tapestry in the forest.
+A stray kitten finds a new home, bringing unexpected joy and companionship to its rescuer.
+Under the vast expanse of the starry night sky, a camper feels a profound connection to the universe.
+The aroma of freshly baked bread from the local bakery evokes memories of childhood.
+An artist's studio, cluttered with paintbrushes and canvases, is a testament to creative chaos.
+The first blooms of spring bring hope and renewal to the community after a long winter.
+A grandmother's tales of her youth fascinate her grandchildren, bridging generations.
+The rhythmic sound of waves crashing on the shore has a calming effect on the mind.
+A volunteer's selfless acts of kindness make a significant difference in the lives of those in need.
+The discovery of an old journal in the attic unlocks secrets of the family's past.
+Every morning, she walks her dog along the beach, watching the sunrise in silence.
+The old library held secrets between books that hadn't been opened for decades.
+He learned the hard way that not all advice is good advice, especially from strangers.
+As the rain poured down, they found refuge in a small café, their laughter warming the room.
+The garden was her escape, where flowers listened and the wind whispered back her thoughts.
+On his desk lay a map filled with destinations, some crossed off, but many more waiting to be explored.
+The artist spent hours in her studio, her emotions flowing into the canvas in vibrant hues.
+At the family reunion, stories of the past wove a tapestry of their shared history.
+The startup's success was a testament to their hard work, innovative ideas, and relentless determination.
+Through the lens of his camera, he captured moments that most people overlooked.
+She found solace in writing, each word a step on the path to healing her broken heart.
+The ancient tree stood tall, its branches a testament to the centuries it had witnessed.
+In the quiet of the early morning, the city felt like a different world, peaceful and serene.
+Their friendship was a beacon of hope, proving that true bonds withstand the test of time.
+The chef's passion for cooking transformed simple ingredients into culinary masterpieces.
+On the crowded train, a chance encounter led to a conversation that would change their lives.
+The museum was a gateway to other times and places, each exhibit telling its own story.
+In the workshop, surrounded by tools and wood shavings, he crafted toys that sparked joy in children's eyes.
+The melody of her song carried on the wind, a lonely serenade to the setting sun.
+Amidst the hustle of the market, the fragrance of fresh spices and colorful fabrics created an enchanting chaos.
+IndexError: list index out of range
+KeyError: 'key' not found in dictionary
+SyntaxError: invalid syntax in Python script
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+NameError: name 'variable' is not defined
+ValueError: could not convert string to float: 'text'
+AttributeError: 'NoneType' object has no attribute 'append'
+IndentationError: unexpected indent in Python file
+OverflowError: math range error
+RuntimeError: maximum recursion depth exceeded
+ImportError: No module named 'module_name'
+ModuleNotFoundError: No module named 'module_name'
+ZeroDivisionError: division by zero
+NullPointerException at MyClass.java:10
+ArrayIndexOutOfBoundsException: 12 at ArrayDemo.java:5
+ClassNotFoundException: com.example.MyClass not found
+IOException: Failed to open file at FileOpener.java:8
+NumberFormatException: For input string: "text" at NumberParser.java:4
+ClassCastException: cannot cast class X to class Y at MyClass.java:22
+IllegalArgumentException: Argument 'x' cannot be null at MyMethod.java:2
+IllegalStateException: State [XYZ] is not valid at StateChecker.java:6
+ConcurrentModificationException at MyCollection.java:15
+ArithmeticException: / by zero at Divider.java:3
+FileNotFoundException: config.txt (No such file or directory) at ConfigLoader.java:21
+SecurityException: Permission denied at SecureAccess.java:4
+MySQL Error 1045 (28000): Access denied for user 'user'@'localhost' (using password: YES)
+MySQL Error 1146: Table 'database.table' doesn't exist
+MySQL Error 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock'
+MySQL Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+PostgreSQL ERROR: relation "table_name" does not exist at character 14
+PostgreSQL ERROR: could not connect to server: Connection refused
+PostgreSQL ERROR: duplicate key value violates unique constraint "table_pkey"
+PostgreSQL ERROR: division by zero
+Oracle ORA-00904: "COLUMN_NAME": invalid identifier
+Oracle ORA-12541: TNS:no listener
+Oracle ORA-28000: the account is locked
+Oracle ORA-00001: unique constraint (SCHEMA.CONSTRAINT_NAME) violated
+SQL Server Error 18456: Login failed for user 'user_name'
+SQL Server Error 547: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_constraint". The conflict occurred in database "db_name", table "table_name".
+SQL Server Error 2627: Violation of PRIMARY KEY constraint 'PK_constraint'. Cannot insert duplicate key in object 'dbo.table'.
+SQL Server Error 4060: Cannot open database "database_name" requested by the login. The login failed.
+MongoDB Error: Authentication failed.
+MongoDB Error: network error while attempting to run command 'command_name'
+MongoDB Error: E11000 duplicate key error collection: collection_name index: index_name dup key: { : value }
+MongoDB Error: Cannot apply $push/$pushAll modifier to non-array
+Database Error: Failed to fetch data: connection timeout
+Database Error: Invalid query parameter value for 'id'
+Database Error: Unsupported data type in column 'age'
+Database Error: Database 'db_name' not found
+Database Error: Insufficient privileges to execute the query
+PHP Warning: Division by zero in /path/to/script.php on line 10
+PHP Fatal error: Call to undefined function functionName() in /path/to/script.php on line 15
+PHP Notice: Undefined index: key in /path/to/script.php on line 5
+PHP Parse error: syntax error, unexpected ';' in /path/to/script.php on line 20
+PHP Warning: file_get_contents(/path/to/file): failed to open stream: No such file or directory in /path/to/script.php on line 25
+PHP Fatal error: Uncaught Error: Class 'ClassName' not found in /path/to/script.php:30
+PHP Notice: Trying to access array offset on value of type null in /path/to/script.php on line 35
+PHP Deprecated: FunctionName() is deprecated in /path/to/script.php on line 40
+PHP Warning: Invalid argument supplied for foreach() in /path/to/script.php on line 45
+PHP Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /path/to/script.php on line 50
+PHP Notice: Undefined variable: varName in /path/to/script.php on line 55
+PHP Parse error: syntax error, unexpected '}', expecting ';' in /path/to/script.php on line 60
+PHP Warning: mysqli_connect(): (HY000/1045): Access denied for user 'user'@'localhost' (using password: YES) in /path/to/script.php on line 65
+CS0029: Cannot implicitly convert type 'int' to 'string'
+CS0246: The type or namespace name 'TypeName' could not be found (are you missing a using directive or an assembly reference?)
+CS0161: 'MethodName': not all code paths return a value
+CS0117: 'ClassName' does not contain a definition for 'MethodName'
+CS1061: 'Type' does not contain a definition for 'Member' and no accessible extension method 'Member' accepting a first argument of type 'Type' could be found
+CS0120: An object reference is required for the non-static field, method, or property 'MemberName'
+CS0103: The name 'varName' does not exist in the current context
+CS1002: ; expected
+CS1503: Argument 1: cannot convert from 'type1' to 'type2'
+CS7036: There is no argument given that corresponds to the required formal parameter 'parameterName' of 'MethodName(parameterType)'
+CS0019: Operator 'operator' cannot be applied to operands of type 'type1' and 'type2'
+CS0009: Metadata file 'file.dll' could not be opened -- 'Error Message'
+COBOL Error: "IDENTIFICATION DIVISION" missing or incorrect.
+COBOL Compile-time Error: Syntax error in "DATA DIVISION".
+COBOL Runtime Error: Division by zero in COMPUTE statement.
+COBOL Error: "PROCEDURE DIVISION" using undefined data item.
+COBOL Warning: "WORKING-STORAGE" section variables uninitialized.
+COBOL Error: Invalid file access attempt in "INPUT-OUTPUT SECTION".
+COBOL Compile Error: "ENVIRONMENT DIVISION" configuration issue.
+COBOL Error: Missing "END PROGRAM" statement.
+COBOL Syntax Error: Unexpected end of program.
+COBOL Runtime Error: File not found during OPEN statement.
+COBOL Error: "PERFORM" statement range error.
+COBOL Error: Picture clause syntax error.
+COBOL Warning: Variable "X" exceeds display size.
+COBOL Error: Incompatible types in MOVE statement.
+COBOL Compile Error: "COPY" statement file not found.
+COBOL Runtime Error: Exceeded maximum file record length.
+COBOL Error: Incorrect "CALL" statement parameters.
+COBOL Error: "GO TO" statement references undefined paragraph.
+COBOL Compile Warning: Deprecated feature used in "SCREEN SECTION".
+COBOL Error: Arithmetic overflow in "COMPUTE" statement.
+Perl syntax error at script.pl line 3, near "if"
+Perl runtime error: Can't call method "new" on an undefined value at script.pl line 10.
+Perl error: Use of uninitialized value $var in concatenation (.) at script.pl line 5.
+Perl error: Can't locate MyModule.pm in @INC (you may need to install the MyModule module) at script.pl line 2.
+Perl syntax error: Missing right curly or square bracket at script.pl line 15, at end of line
+Perl error: Global symbol "$var" requires explicit package name (did you forget to declare "my $var"?) at script.pl line 4.
+Perl runtime error: Modification of a read-only value attempted at script.pl line 8.
+Perl warning: Argument isn't numeric in numeric eq (==) at script.pl line 6.
+Perl error: Can't open file 'filename.txt': No such file or directory at script.pl line 3.
+Perl error: Bareword "string" not allowed while "strict subs" in use at script.pl line 4.
+Perl syntax error: syntax error at script.pl line 7, near "-> new"
+Perl runtime error: Out of memory! at script.pl line 9.
+Perl warning: Use of "goto" to jump into a construct is deprecated at script.pl line 10.
+Python IndexError: list index out of range
+Python KeyError: 'key' not found in dictionary
+Python SyntaxError: invalid syntax in Python script
+Python TypeError: unsupported operand type(s) for +: 'int' and 'str'
+Python NameError: name 'variable' is not defined
+Python ValueError: could not convert string to float: 'text'
+Python AttributeError: 'NoneType' object has no attribute 'append'
+Python IndentationError: unexpected indent in Python file
+Python OverflowError: math range error
+Python RuntimeError: maximum recursion depth exceeded
+Python ImportError: No module named 'module_name'
+Python ZeroDivisionError: division by zero
+C error: 'printf' undeclared (first use in this function)
+C warning: implicit declaration of function 'exit'
+C error: expected ';' before '}' token
+C fatal error: stdio.h: No such file or directory
+C warning: incompatible implicit declaration of built-in function 'malloc'
+C error: 'for' loop initial declarations are only allowed in C99 mode
+C error: subscripted value is neither array nor pointer nor vector
+C warning: control reaches end of non-void function
+C error: conflicting types for 'functionName'
+C warning: comparison between pointer and integer
+C error: too few arguments to function 'functionName'
+C fatal error: failed to compile: 'gcc' is not recognized as an internal or external command
+C error: 'structName' has no member named 'fieldName'
+C++ error: 'cout' was not declared in this scope
+C++ fatal error: 'vector' file not found
+C++ error: no matching function for call to 'functionName'
+C++ warning: ISO C++ forbids converting a string constant to 'char*'
+C++ error: cannot convert 'std::string {aka std::basic_string<char>}' to 'const char*'
+C++ error: template argument for 'template<class T> class vector' uses local type 'localClassName'
+C++ fatal error: out of memory allocating 2048 bytes
+C++ warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type'
+C++ error: invalid use of 'this' in non-member function
+C++ error: 'class ClassName' has no member named 'memberName'
+C++ error: undefined reference to 'functionName()'
+C++ fatal error: uncaught exception of type std::out_of_range: vector::_M_range_check
+COBOL Error: 'PERFORM' until condition is invalid at line 120.
+COBOL Compile Error: 'COPY' statement missing for 'INCLUDE' file at line 15.
+COBOL Runtime Error: Division by zero in arithmetic operation at line 225.
+COBOL Error: Data type mismatch for variable 'ACCOUNT-NUMBER' at line 90.
+COBOL Syntax Error: 'END-IF' without corresponding 'IF' at line 180.
+COBOL Error: 'READ' statement for file 'EMPLOYEE-FILE' failed at line 60.
+COBOL Warning: 'WORKING-STORAGE' section is full at line 300.
+COBOL Error: 'MOVE' operation failed due to size overflow at line 75.
+COBOL Compile Error: 'PROCEDURE DIVISION' missing 'STOP RUN' at end.
+COBOL Syntax Error: Unexpected token 'ELSE' at line 195.
+COBOL Error: File 'TRANSACTION-FILE' not found during 'OPEN' at line 30.
+COBOL Error: Incorrect 'PIC' clause format for variable 'EMPLOYEE-ID' at line 85.
+COBOL Error: 'CALL' statement to non-existent program 'CALCULATE-TAX' at line 155.
+Java Error: Cannot find symbol 'System.ou.println' at line 10.
+Java Runtime Exception: ArrayIndexOutOfBoundsException at Main.java:22.
+Java Error: Class 'MyClass' is public, should be declared in a file named 'MyClass.java'.
+Java Exception: NullPointerException encountered at Main.java:18.
+Java Compile Error: 'package java.util does not exist' at line 5.
+Java Error: Method does not override or implement a method from a supertype at line 34.
+Java Error: Incompatible types: found 'int', required 'String' at line 47.
+Java Warning: The serializable class 'MyClass' does not declare a static final serialVersionUID field.
+Java Error: Exception in thread "main" java.lang.IllegalStateException at Main.java:55.
+Java Error: Cannot make a static reference to the non-static method 'foo' from the type 'Bar' at line 63.
+Java Error: Constructor cannot be applied to given types; required: no arguments, found: 'String' at line 72.
+Java Fatal Error: Could not find or load main class Main caused by: java.lang.NoClassDefFoundError.
