@@ -1,0 +1,22 @@
+What this SOW never mentioned
+
+Multi-tenancy and multi-project setup
+e.g., merchant business / COE / LOB.
+
+Integration with tools like Fiddler and Tone
+(no mention of observability / explainability integrations).
+
+No mention of CI/CD tools
+that are used in our organization.
+
+Only focus on on-site use case
+— batch prediction utilizing vendor SDKs, which are something a GCP developer can spin up / provision from SDK.
+
+No Enterprise SIEM integration
+(may mention later).
+
+No FinOps
+— no cost optimization or monitoring aspects.
+
+No Auto Parking (optional)
+— no mention of automated instance start/stop scheduling.
