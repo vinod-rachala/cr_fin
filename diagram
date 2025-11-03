@@ -1,0 +1,124 @@
+# **AI Platform – Capability Landscape (Box Diagram Overview with Multi-Tenancy)**
+
+Below is the **enhanced box diagram** including **multi-tenancy and project segregation** across the platform layers.
+
+```
++-------------------------------------------------------------------------------------------+
+|                                     AI PLATFORM                                           |
+|-------------------------------------------------------------------------------------------|
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                   USER LAYER                                        |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Business Users / Data Scientists / Engineers / AI Architects                      |  |
+|  | - Access via Portal, API Gateway (Apigee/Kong), or CLI                              |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                          MULTI-TENANCY & PROJECT SEGREGATION                         |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Tenant isolation by folders, projects, and environment layers (Dev/QA/Prod)       |  |
+|  | - Centralized policies for IAM, billing, and resource quotas                        |  |
+|  | - Shared services (logging, networking, monitoring) with controlled access           |  |
+|  | - Each tenant inherits platform services but maintains data and IAM separation       |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                APPLICATION LAYER                                   |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - AI Use Cases: ML Models, GenAI Agents, RAG Systems, Forecasting, etc.             |  |
+|  | - Multi-Agent Frameworks (LangGraph / CrewAI / AgentSpace)                          |  |
+|  | - Real-time / Batch Inference APIs                                                  |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                MLOps + LLMOps LAYER                                |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Model Training, Tuning, Deployment Pipelines (Harness, Argo, Vertex Pipelines)     |  |
+|  | - Model Registry (MLflow / Vertex / Bedrock)                                        |  |
+|  | - Prompt & Model Versioning                                                         |  |
+|  | - Feedback Loops and Retraining Automation                                          |  |
+|  | - Human-in-the-Loop (Evaluation, Scoring)                                           |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                DATA & KNOWLEDGE LAYER                              |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Data Catalog & Governance (Dataplex / Data Catalog)                               |  |
+|  | - Feature Store (Feast / Vertex)                                                    |  |
+|  | - Embedding Store / Vector DB (pgvector / Pinecone / Matching Engine)                |  |
+|  | - RAG Layer (Chunking, Metadata, Embedding Refresh)                                 |  |
+|  | - Synthetic Data (Tonic)                                                            |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                INFRASTRUCTURE LAYER                                |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Kubernetes (GKE + Unmanaged), Cloud Run, Vertex AI Endpoints                      |  |
+|  | - Multi-Project Setup & Folder Hierarchies (supports multi-tenancy)                 |  |
+|  | - Terraform Modules / Deployment Manager Templates                                  |  |
+|  | - Auto-Parking & Auto-Scaling Automation                                            |  |
+|  | - Multi-Cloud Interconnect & Edge Deployments                                       |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                CI/CD & ARTIFACT LAYER                              |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Harness.io / ArgoCD / Cloud Build Pipelines                                       |  |
+|  | - Artifact Repository (JFrog / Artifact Registry / Nexus)                           |  |
+|  | - Promotion Flow (Dev → QA → Prod)                                                  |  |
+|  | - Vulnerability Scanning (JFrog Xray / GCP Scanner)                                 |  |
+|  | - Immutable Storage & Version Rollback                                              |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                OBSERVABILITY & GUARDRAILS                          |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Fiddler / LangSmith / Model Armor Integration                                     |  |
+|  | - Drift, Bias, Latency, Cost & Hallucination Metrics                                |  |
+|  | - Guardrails (Bedrock / Vertex / Model Armor)                                       |  |
+|  | - FinOps Dashboards (Cost Attribution & Forecasting)                                |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                SECURITY & GOVERNANCE LAYER                         |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - IAM, KMS, Audit Logging, RBAC Policies                                            |  |
+|  | - Compliance: SOC2, GDPR, HIPAA, PCI                                                |  |
+|  | - API Gateway Policies (Apigee / Kong)                                              |  |
+|  | - SIEM Integration & Threat Detection                                               |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                MONITORING & AUTOMATION                             |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Event-driven Retraining (Pub/Sub / Eventarc)                                      |  |
+|  | - Health Checks, Backups, Failover                                                  |  |
+|  | - Scheduling (Cloud Scheduler / Functions)                                          |  |
+|  | - VM Auto-Parking, Alerting, and Cost Automation                                    |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
+|  +-------------------------------------------------------------------------------------+  |
+|  |                                FOUNDATION SERVICES                                 |  |
+|  |-------------------------------------------------------------------------------------|  |
+|  | - Networking, VPCs, Private Endpoints, NAT, VPNs                                    |  |
+|  | - Storage (Cloud Storage, S3)                                                       |  |
+|  | - Compute (VMs, GKE Nodes, Vertex Managed Services)                                 |  |
+|  | - Logging & Metrics (Cloud Logging, Stackdriver, Grafana)                           |  |
+|  +-------------------------------------------------------------------------------------+  |
+|                                                                                           |
++-------------------------------------------------------------------------------------------+
+```
+
+---
+
+### **Legend**
+
+* **Multi-Tenancy Layer:** Added explicitly below the user layer to represent project, folder, and environment-level isolation.
+* **Top Layers:** User and Application interaction points.
+* **Middle Layers:** Data, model, and pipeline management.
+* **Bottom Layers:** Infrastructure, observability, governance, and foundation services.
+
+---
+
+This version visually integrates **multi-tenancy and project segregation** across the architecture to show isolation and shared service capabilities.
