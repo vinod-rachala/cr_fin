@@ -1,50 +1,101 @@
-# **AI Platform – Vertical Capability Stack (with Multi-Tenancy)**
++---------------------------------------------+
+|                USER LAYER                   |
+|---------------------------------------------|
+| - Business Users, Data Scientists, AI Archs |
+| - Access via Portal, API Gateway, or CLI    |
+| - Role-based views & access control         |
++---------------------------------------------+
 
-Below is a **vertical column-style box diagram**, where each capability domain is represented as a vertical pillar — ideal for showcasing modular components in a platform architecture.
++---------------------------------------------+
+|        MULTI-TENANCY & PROJECTS             |
+|---------------------------------------------|
+| - Folder & Project-based Isolation (Dev/QA/Prod) |
+| - Centralized IAM, Billing, and Resource Quotas  |
+| - Shared Logging, Networking, Monitoring         |
+| - Tenant-specific guardrails & boundaries        |
++---------------------------------------------+
 
-```
-+------------------------------------------------------------------------------------------------------------------------------------+
-|                                                AI PLATFORM – VERTICAL STACK                                                       |
-+------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                                                                                    |
-|   +----------------------+     +---------------------------+     +--------------------------+     +--------------------------+     +---------------------------+  |
-|   |      USER LAYER      |     | MULTI-TENANCY & PROJECTS  |     |   APPLICATION LAYER      |     |   MLOps + LLMOps LAYER   |     |   DATA & KNOWLEDGE LAYER   |  |
-|   |----------------------|     |---------------------------|     |--------------------------|     |--------------------------|     |----------------------------|  |
-|   | - Business Users     |     | - Folder & Project-based  |     | - AI/ML Use Cases        |     | - Model Training, Deploy |     | - Data Catalog & Governance|  |
-|   | - AI Architects      |     |   Isolation (Dev/QA/Prod) |     | - GenAI Agents, RAG Sys  |     | - Model Registry (MLflow)|     | - Feature Store (Feast)   |  |
-|   | - API, Portal, CLI   |     | - Shared Services (IAM)   |     | - Forecasting, NLP, CV   |     | - Prompt Versioning       |     | - Embedding Store (Vector) |  |
-|   |                      |     | - Billing & Resource Quota|     | - Real-time / Batch APIs |     | - Feedback Loops          |     | - RAG & Chunk Pipelines   |  |
-|   +----------------------+     +---------------------------+     +--------------------------+     +--------------------------+     +----------------------------+  |
-|                                                                                                                                    |
-|   +-----------------------+    +---------------------------+     +--------------------------+     +--------------------------+     +----------------------------+  |
-|   | CI/CD & ARTIFACTS     |    |   INFRASTRUCTURE LAYER    |     | OBSERVABILITY & GUARDRAILS|     | SECURITY & GOVERNANCE     |     | MONITORING & AUTOMATION    |  |
-|   |-----------------------|    |---------------------------|     |---------------------------|     |--------------------------|     |----------------------------|  |
-|   | - Harness / ArgoCD    |    | - GKE / Unmanaged K8s     |     | - Fiddler / LangSmith     |     | - IAM, KMS, RBAC         |     | - Event-driven Retraining  |  |
-|   | - Artifact Registry   |    | - Vertex AI / Cloud Run   |     | - Drift, Bias, Latency     |     | - Compliance (SOC2 etc.) |     | - Scheduler / Functions    |  |
-|   | - Promotion Flow      |    | - Multi-cloud Networking  |     | - Guardrails (Bedrock etc.)|     | - API Gateway Policies   |     | - Auto-Parking & Alerts    |  |
-|   | - Immutable Storage   |    | - Terraform Templates     |     | - FinOps Dashboards        |     | - SIEM & Threat Detection|     | - Failover & Backup       |  |
-|   +-----------------------+    +---------------------------+     +---------------------------+     +--------------------------+     +----------------------------+  |
-|                                                                                                                                    |
-|                                                +----------------------------+                                                    |
-|                                                |   FOUNDATION SERVICES       |                                                    |
-|                                                |----------------------------|                                                    |
-|                                                | - Networking (VPC, VPNs)   |                                                    |
-|                                                | - Storage (Cloud, S3)      |                                                    |
-|                                                | - Compute (VMs, GKE Nodes) |                                                    |
-|                                                | - Logging, Metrics         |                                                    |
-|                                                +----------------------------+                                                    |
-|                                                                                                                                    |
-+------------------------------------------------------------------------------------------------------------------------------------+
-```
++---------------------------------------------+
+|            APPLICATION LAYER                |
+|---------------------------------------------|
+| - AI/ML Use Cases (NLP, CV, Forecasting, RAG) |
+| - Multi-Agent Frameworks (LangGraph, CrewAI)  |
+| - Real-time & Batch API Endpoints             |
+| - Enterprise App Integrations (CRM, ERP)      |
++---------------------------------------------+
 
----
++---------------------------------------------+
+|           MLOps + LLMOps LAYER              |
+|---------------------------------------------|
+| - Model Training, Tuning, Deployment         |
+| - Pipelines (Harness, Argo, Vertex)          |
+| - Model Registry (MLflow, Vertex, Bedrock)   |
+| - Prompt & Model Versioning                  |
+| - Feedback Loops & Human-in-the-Loop Eval    |
++---------------------------------------------+
 
-### **Legend**
++---------------------------------------------+
+|           DATA & KNOWLEDGE LAYER            |
+|---------------------------------------------|
+| - Data Catalog & Governance (Dataplex)       |
+| - Feature Store (Feast / Vertex)             |
+| - Embedding Store (pgvector, Pinecone)       |
+| - RAG Components: Chunking & Embedding Refresh |
+| - Synthetic Data (Tonic)                     |
++---------------------------------------------+
 
-* Each **vertical box** represents a modular capability pillar.
-* **User → Multi-Tenancy → Application → MLOps → Data → CI/CD → Infra → Observability → Security → Monitoring → Foundation** follow top-down hierarchy.
-* Multi-tenancy sits early in the stack to signify isolation and governance across shared infrastructure.
++---------------------------------------------+
+|           CI/CD & ARTIFACTS LAYER           |
+|---------------------------------------------|
+| - Harness.io, ArgoCD, Cloud Build Pipelines  |
+| - Artifact Registry (JFrog, GAR, Nexus)      |
+| - Promotion Flow (Dev → QA → Prod)           |
+| - Vulnerability Scanning & Rollback Control  |
+| - Immutable Storage & Audit Trails           |
++---------------------------------------------+
 
----
++---------------------------------------------+
+|           INFRASTRUCTURE LAYER              |
+|---------------------------------------------|
+| - Kubernetes (GKE + Unmanaged), Cloud Run    |
+| - Vertex AI Endpoints, Multi-Cloud Network   |
+| - Terraform Templates, Deployment Manager    |
+| - Auto-Parking, Auto-Scaling                 |
+| - Edge & Hybrid Deployments                  |
++---------------------------------------------+
 
-This vertical structure provides a clear visual representation of **end-to-end AI Platform components** — from users and tenants at the top to foundational services at the bottom — showing how each capability integrates within a unified enterprise AI platform.
++---------------------------------------------+
+|        OBSERVABILITY & GUARDRAILS           |
+|---------------------------------------------|
+| - Fiddler, LangSmith, Model Armor            |
+| - Drift, Bias, Latency, Cost Metrics         |
+| - Hallucination Detection & Prompt Filters   |
+| - FinOps Dashboards & Cost Attribution       |
++---------------------------------------------+
+
++---------------------------------------------+
+|         SECURITY & GOVERNANCE LAYER         |
+|---------------------------------------------|
+| - IAM, KMS, RBAC, and API Gateway Controls   |
+| - Compliance (SOC2, HIPAA, GDPR, PCI)        |
+| - Policy Enforcement via Guardrails          |
+| - SIEM Integration & Threat Detection        |
++---------------------------------------------+
+
++---------------------------------------------+
+|          MONITORING & AUTOMATION            |
+|---------------------------------------------|
+| - Event-driven Retraining (Pub/Sub, Eventarc) |
+| - Health Checks, Backups, Failover           |
+| - Scheduling (Cloud Scheduler / Functions)   |
+| - VM Auto-Parking & Cost Automation          |
++---------------------------------------------+
+
++---------------------------------------------+
+|           FOUNDATION SERVICES               |
+|---------------------------------------------|
+| - Networking (VPC, VPNs, Private Links)      |
+| - Storage (Cloud Storage, S3), Compute (VMs, GKE) |
+| - Logging & Metrics (Cloud Logging, Grafana) |
+| - Observability Backplane Integration        |
++---------------------------------------------+
